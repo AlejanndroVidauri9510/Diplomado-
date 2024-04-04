@@ -1,0 +1,104 @@
+html{
+
+    /*tamaño base en 1rem = 16px*/
+    font-size: 16px;
+}
+body{
+
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+
+    background-color: rgb(4, 92, 20);
+    /*con el text-alintg centramos y movemos el texto del encabesado segun done se requiera*/   
+    text-align: center;
+    color: hsl(176, 2%, 96%);
+    
+}
+header h1{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+head img{
+
+    margin-top: 0%;
+    margin-left: 70%;
+    float: left;
+
+}
+main{
+    padding: 1rem;
+    /*display es una propiedad la cual nos permite */
+    display: flex;
+    
+}
+main .Tabla{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    
+
+}
+.contenido{
+    flex: 2px 2px calc(40% -0.5rem);
+    background-color: rgb(184, 186, 173);
+    text-align: justify;
+    padding: 5rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 7px;
+    margin: 0.5rem;
+    
+    
+}
+#Tabla_ciudadana{
+    /*calc es una funcion que realiza calculos con medidas (suma, resta, multiplicacion, div mesclando porcentajes, pixeles o cualquier unidad ) */
+    flex: 0 0 calc(30% - 0.5rem);
+    
+    border-collapse: collapse;
+    border: 3px solid hsl(104, 88%, 32%);
+    letter-spacing: 2px; 
+
+}
+tr, th,td{
+    border:3px solid hsl(104, 88%, 32%); ;
+
+}
+footer{
+
+    background-color: green;
+    text-align: center;
+    padding: 1rem;
+
+}
+.social-links{
+
+    list-style: none;
+    padding: 0.rem;
+}
+.social-links li{
+    display: inline-block;
+    margin: 0.5rem;
+}
+.social-links a{
+    color: #fff;
+    text-decoration: none;
+}
+/*Creamos la media Query para vistas mas pequeñas */
+@media screen and (max-width: 450px){
+    main{
+
+        flex-direction: column;
+        align-items: center;
+        padding: 0.4rem;
+    }
+
+.contenido{
+
+    flex: 0 0 calc(100% -2rem);
+    background-color: #fff;
+}
+    
+}
