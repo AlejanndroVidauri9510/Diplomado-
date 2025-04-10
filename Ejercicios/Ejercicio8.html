@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado con Toping </title>
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- CSS personalizado  -->
+    <link rel="stylesheet" href="./CSS/ejercicio8.css">
+    <script src="./JS/ejercicio8.js"></script>
+</head>
+<!-- Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de 
+ comida rápida cuánto le costará en función del topping que elija.
+El helado sin topping cuesta 50 MXN.
+El topping de oreo cuesta 10 MXN.
+El topping de KitKat cuesta 15 MXN.
+El topping de brownie cuesta 20 MXN.
+En caso de no disponer del topping solicitado por el usuario, 
+el programa le indicará “no tenemos este topping, lo sentimos.”
+y a continuación le informará el precio del helado sin ningún topping. -->
+<body>
+    <main>
+        <div class="coteiner mt-5">
+            <div class=" card p-4 shadow-log">
+                <h2 class="text-center mb-4">Selecciona el sabor del helado</h2>
+
+                <label for="toping" class="form-label">Selecciona el sabor</label>
+                <select name="helados" id="toping" class="form-select">
+
+                    <option value=" ">Seleccionar una opcion </option>
+
+                    <option value="">Oreo</option>
+
+                    <option value="">Limon </option>
+
+                    <option value="">Brownie</option>
+
+                    <option value="">Fresa</option>
+
+                </select>
+                <button onclick="CalcularPrecio()" class="btn btn-primary mt-3 w-100">Calcular precio</button>
+                <p id="resultado" class="mt-4 text-center fw-bold"></p>Aqui va el resultado</p>
+            </div>
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
