@@ -1,0 +1,17 @@
+body {
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .card {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 16px;
+    background-color: #fff;
+  }
+  
+  #resultado {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

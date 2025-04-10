@@ -1,0 +1,19 @@
+body{
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+
+}
+
+#mensaje{
+
+
+    font-size: 18px;
+}

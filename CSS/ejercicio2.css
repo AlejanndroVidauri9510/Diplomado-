@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4ff;
+}
+.Container_ejerciccio2{
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10 rgb( 0, 0, 0, 0.1 );
+
+    }
+
+input{
+    margin: 10px 0;
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius:5px ;
+
+}
+
+button{
+
+    background: #6200ea;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+
+    background: #3700b3;
+
+}
+#Resultado{
+    font-size: 18px;
+    margin-top:10px ;
+    color: #333;
+    font-weight: bold;
+}

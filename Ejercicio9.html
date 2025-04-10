@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora de Programas Educativos </title>
+
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="./CSS/ejercicio9.css">
+
+  <script src="./JS/ejercicio9.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container mt-5">
+            <div class="card p-4 shadow-lg">
+                <h2>📚 Calcula el costo de tu programa</h2>
+
+                <div class="mb-3">
+                    <label for="programa" class="form-label"> Selecciona un programa: </label>
+                    <select id="programa" class="form-select">
+                        <option value="">-- Selecciona --</option>
+                        <option value="course">Course ($4999 / 2 meses)</option>
+                        <option value="carrera">Carrera ($3999 / 6 meses)</option>
+                        <option value="master">Master ($2999 / 12 meses)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="beca" class="form-label">¿Tienes alguna beca?</label>
+                <select id="beca" class="form-select">
+                    <option value="ninguna">Ninguna</option>
+                    <option value="facebook">Beca Facebook (20%)</option>
+                    <option value="google">Beca Google (15%)</option>
+                    <option value="jesua">Beca Jesua (50%)</option>
+                 </select>  
+                </div>
+                <button onclick="calcularPago()" class="btn btn-success w-100">Calcular</button>
+                <div id="resultado" class="mt-4 text-center fw-bold"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
