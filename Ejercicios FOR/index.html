@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémons Múltiplos de 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styless.css">
+    <script src="./JS/Ejercicio.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <div class="container mt-5">
+            <h1 class="text-center">Pokémons Múltiplos de 5</h1>
+        
+            <div class="mb-3">
+              <label for="numero" class="form-label">Introduce un número:</label>
+              <input type="number" id="numero" class="form-control" />
+            </div>
+        
+            <button onclick="mostrarPokemons()" class="btn btn-primary">Mostrar Pokémons</button>
+        
+            <ul id="listaPokemons" class="list-group mt-4"></ul>
+          </div>
+    </main>
+    
+</body>
+</html>
